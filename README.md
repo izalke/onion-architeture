@@ -9,7 +9,7 @@ Projekt polega na stworzeniu aplikacji do zarządzania sklepem motorowym, która
 - SQL Server
 
 ## Instalacja
-1. Sklonuj repozytorium z GitHub:
+1. Sklonuj repozytorium z tego GitHub:
     ```bash
     git clone https://github.com/izalke/onion-architeture.git
     ```
