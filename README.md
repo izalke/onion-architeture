@@ -3,6 +3,10 @@
 ## Opis projektu
 Projekt polega na stworzeniu aplikacji do zarządzania sklepem motorowym, która pozwala na logowanie i rejestrację użytkowników, zarządzanie produktami oraz przetwarzanie zamówień.
 
+Struktura bazy danych:
+![image](https://github.com/izalke/onion-architeture/assets/104392855/7368536e-88ea-4cf9-affa-d540aea14b60)
+
+    
 ## Wymagania
 - .NET 8
 - Visual Studio 2022
