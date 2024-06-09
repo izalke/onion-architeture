@@ -13,6 +13,15 @@ Projekt polega na stworzeniu aplikacji do zarządzania sklepem motorowym, która
     ```bash
     git clone https://github.com/izalke/onion-architeture.git
     ```
+
+migracja i stworzenie bazy danych:
+
+    I.W appsettings.json zmień w lini 10 Server=WHITE na Server=[nazwa swojego serwera MsSQL]
+
+    II.Tools -> Nuget Package Manager -> Console
+    III.W konsoli wpisz: update-database -> add-migration Migration -> update-database
+
+
 2. Otwórz projekt w Visual Studio.
 3. Skonfiguruj połączenie z bazą danych w pliku `appsettings.json`.
 4. Uruchom migracje EF Core:
@@ -31,3 +40,4 @@ Plik `appsettings.json` powinien zawierać ustawienia połączenia z bazą danyc
 Aby uruchomić testy jednostkowe, użyj poniższej komendy:
 ```bash
 dotnet test
+
