@@ -17,15 +17,6 @@ Struktura bazy danych:
     ```bash
     git clone https://github.com/izalke/onion-architeture.git
     ```
-
-migracja i stworzenie bazy danych:
-
-    I.W appsettings.json zmień w lini 10 Server=WHITE na Server=[nazwa swojego serwera MsSQL]
-
-    II.Tools -> Nuget Package Manager -> Console
-    III.W konsoli wpisz: update-database -> add-migration Migration -> update-database
-
-
 2. Otwórz projekt w Visual Studio.
 3. Skonfiguruj połączenie z bazą danych w pliku `appsettings.json`.
 4. Uruchom migracje EF Core:
@@ -39,6 +30,14 @@ migracja i stworzenie bazy danych:
 
 ## Konfiguracja
 Plik `appsettings.json` powinien zawierać ustawienia połączenia z bazą danych oraz inne niezbędne konfiguracje.
+
+Migracja i stworzenie bazy danych:
+    ```
+    I. W appsettings.json zmień w lini 10 Server=WHITE na Server=[nazwa swojego serwera MsSQL]
+    II. Tools -> Nuget Package Manager -> Console
+    III. W konsoli wpisz: update-database -> add-migration Migration -> update-database
+    ```
+
 
 ## Testowanie
 Aby uruchomić testy jednostkowe, użyj poniższej komendy:
