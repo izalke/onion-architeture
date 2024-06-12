@@ -31,13 +31,19 @@ Struktura bazy danych:
 ## Konfiguracja
 Plik `appsettings.json` powinien zawierać ustawienia połączenia z bazą danych oraz inne niezbędne konfiguracje.
 
-Migracja i stworzenie bazy danych:
-    ```
-    I. W appsettings.json zmień w lini 10 Server=WHITE na Server=[nazwa swojego serwera MsSQL]
-    II. Tools -> Nuget Package Manager -> Console
-    III. W konsoli wpisz: update-database -> add-migration Migration -> update-database
-    ```
+ Migracja i stworzenie bazy danych:
+1. Aby przeprowadzić migrację i stworzyć bazę danych, wykonaj następujące kroki:
 
+2. W pliku appsettings.json zmień w linii 10 wartość Server=(WHITE lub IZA) na Server=[nazwa swojego serwera MsSQL].
+
+3. Otwórz Visual Studio i przejdź do Tools -> NuGet Package Manager -> Package Manager Console.
+
+W konsoli wpisz następujące polecenia:
+  ```bash
+update-database
+add-migration InitialMigration
+update-database
+```
 
 ## Testowanie
 Aby uruchomić testy jednostkowe, użyj poniższej komendy:
