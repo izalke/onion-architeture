@@ -43,10 +43,7 @@ namespace onion_architeture.Pages.MorocyclePages
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+
 
             _context.Attach(Motorcycle).State = EntityState.Modified;
 
@@ -66,7 +63,7 @@ namespace onion_architeture.Pages.MorocyclePages
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Motorlist");
         }
 
         private bool MotorcycleExists(int id)

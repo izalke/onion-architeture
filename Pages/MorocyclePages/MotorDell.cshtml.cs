@@ -57,7 +57,7 @@ namespace onion_architeture.Pages.MorocyclePages
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Motorlist");
         }
     }
 }
