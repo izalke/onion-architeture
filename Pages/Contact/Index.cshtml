@@ -1,4 +1,5 @@
-﻿@model List<Contact>
+﻿@using onion_architeture.Models
+@model List<onion_architeture.Models.Contact>
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -26,26 +27,26 @@
                 </th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (Contact item in @Model)
-            {
-                <tr>
-                    <td>
-                        @item.Name
-                    </td>
-                    <td>
-                        @item.Email
-                    </td>
-                    <td>
-                        @item.Priority.GetDisplayName()
-                    </td>
-                    <td>
-                        <a asp-action="Update" asp-route-id=@item.Id>Edytuj</a>
-                        <a asp-action="Details" asp-route-id=@item.Id>Szczegóły</a>
-                        <a asp-action="Delete" asp-route-id=@item.Id>Usuń</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
+        @*        <tbody>
+    @foreach (Contact item in @Model)
+    {
+    <tr>
+    <td>
+    @item.Name
+    </td>
+    <td>
+    @item.Email
+    </td>
+    <td>
+    @item.Priority.GetDisplayName()
+    </td>
+    <td>
+    <a asp-action="Update" asp-route-id=@item.Id>Edytuj</a>
+    <a asp-action="Details" asp-route-id=@item.Id>Szczegóły</a>
+    <a asp-action="Delete" asp-route-id=@item.Id>Usuń</a>
+    </td>
+    </tr>
+    }
+    </tbody> *@
     </table>
 }
