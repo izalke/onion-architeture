@@ -32,13 +32,6 @@ namespace onion_architeture.Pages.MorocyclePages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                IsSuccess = false;
-                Message = "Invalid data";
-                return Page();
-            }
-
             try
             {
                 _context.Motorcycles.Add(Motorcycle);
@@ -52,7 +45,8 @@ namespace onion_architeture.Pages.MorocyclePages
                 Message = $"Error: {ex.Message}";
             }
 
-            return RedirectToPage("./MotorAdd");
+            // Powrót na stronę z komunikatem o wyniku operacji
+            return RedirectToPage("./Motorlist");
         }
     }
 }
