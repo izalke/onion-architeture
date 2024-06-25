@@ -40,5 +40,6 @@ namespace onion_architeture.Infrastructure.Data
                 .WithMany(m => m.Insurances)
                 .HasForeignKey(i => i.MotorcycleId);
         }
+        public DbSet<onion_architeture.Core.Entities.Insurance> Insurance { get; set; } = default!;
     }
 }
