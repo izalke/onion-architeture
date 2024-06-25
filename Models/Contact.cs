@@ -1,30 +1,26 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc;
-
 
 namespace onion_architeture.Models
-{ 
+{
     public class Contact
-    { 
+    {
         public int Id { get; set; }
-        //atrybuty nad dotyczą pola pod
+
         [Required(ErrorMessage = "Podaj swoje imię")]
         [StringLength(maximumLength: 50, ErrorMessage = "Imię za długie maksymalna ilość znaków 50 ")]
-
-
         [Display(Name = "Imię")]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Display(Name = "Email")]
         [EmailAddress(ErrorMessage = "Zły adres email")]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         [Display(Name = "Telefon")]
         [Phone]
-        public string Phone { get; set; }
+        public string Phone { get; set; } = string.Empty;
 
-        [Display(Name = "Data_urodzenia")]
+        [Display(Name = "Data urodzenia")]
         [DataType(DataType.Date)]
         public DateTime? Birth { get; set; }
 
@@ -32,4 +28,3 @@ namespace onion_architeture.Models
         public Priority Priority { get; set; }
     }
 }
-
