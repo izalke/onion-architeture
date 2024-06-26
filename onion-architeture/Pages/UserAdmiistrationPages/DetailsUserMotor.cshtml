@@ -16,6 +16,7 @@
                     {
                         <li>
                             @Html.DisplayFor(m => motorcycle.Brand) - @Html.DisplayFor(m => motorcycle.Model) - @Html.DisplayFor(m => motorcycle.Price) USD
+                            <a asp-page="./UserMotorDell" asp-route-clientId="@Model.Client.Id" asp-route-motorcycleId="@motorcycle.Id" class="btn btn-danger">Return to store</a>
                         </li>
                     }
                 </ul>
@@ -28,6 +29,5 @@
     </dl>
 </div>
 <div>
-  @*   @Html.ActionLink("Edit", "Edit", new { id = Model.Client.Id }) | *@
     <a asp-page="./UserList">Back to List</a>
 </div>
