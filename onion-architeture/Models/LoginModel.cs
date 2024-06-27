@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace onion_architecture.Models
+namespace onion_architeture.Models
 {
     public class LoginModel
     {
