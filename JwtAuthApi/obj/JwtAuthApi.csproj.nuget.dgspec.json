@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\JwtAuthApi.csproj": {}
+    "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\JwtAuthApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\JwtAuthApi.csproj": {
+    "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\JwtAuthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\JwtAuthApi.csproj",
+        "projectUniqueName": "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\JwtAuthApi.csproj",
         "projectName": "JwtAuthApi",
-        "projectPath": "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\JwtAuthApi.csproj",
+        "projectPath": "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\JwtAuthApi.csproj",
         "packagesPath": "C:\\Users\\izkas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\obj\\",
+        "outputPath": "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\izkas\\AppData\\Roaming\\NuGet\\NuGet.Config",

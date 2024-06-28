@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LkHLo+y6sjQrfzO+lRr68BwPwLGKLj+6811nfpx20L1AQNWOlcucvmoyPCu8dUABBKjDy58BiobRlGrXt4Hqrg==",
+  "dgSpecHash": "7BMJYQVw3x5aK/7x4QF53GsKkzME132GYofHP9KhGBdEELaSPhxapz9F1ZyvYhFQxeJhCBDmmuzQG9C3wPkndw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\izkas\\source\\repos\\JwtAuthApi\\JwtAuthApi.csproj",
+  "projectFilePath": "C:\\Users\\izkas\\Source\\Repos\\onion-architeture1\\JwtAuthApi\\JwtAuthApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\izkas\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\izkas\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
