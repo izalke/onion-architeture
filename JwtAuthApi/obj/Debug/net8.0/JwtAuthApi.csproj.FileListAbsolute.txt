@@ -131,3 +131,4 @@ C:\Users\Luke\Source\Repos\izalke\onion-architeture\JwtAuthApi\obj\Debug\net8.0\
 C:\Users\Luke\Source\Repos\izalke\onion-architeture\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.pdb
 C:\Users\Luke\Source\Repos\izalke\onion-architeture\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.genruntimeconfig.cache
 C:\Users\Luke\Source\Repos\izalke\onion-architeture\JwtAuthApi\obj\Debug\net8.0\ref\JwtAuthApi.dll
+C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.sourcelink.json
