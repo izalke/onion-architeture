@@ -9,15 +9,11 @@ namespace JwtAuthApi.Data
             : base(options)
         {
         }
-
-        // Define your DbSets here
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // Dodawanie przykładowych użytkowników
             modelBuilder.Entity<User>().HasData(
                 new User
                 {

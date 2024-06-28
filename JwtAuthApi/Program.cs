@@ -13,13 +13,10 @@ namespace JwtAuthApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // Configure JWT Authentication
             var key = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]);
             builder.Services.AddAuthentication(options =>
             {
@@ -61,8 +58,6 @@ namespace JwtAuthApi
             var app = builder.Build();
             app.UseCors("AllowSpecificOrigins");
 
-
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -71,7 +66,7 @@ namespace JwtAuthApi
 
             app.UseHttpsRedirection();
 
-            app.UseAuthentication(); // Add this line
+            app.UseAuthentication(); 
             app.UseAuthorization();
 
             app.MapControllers();

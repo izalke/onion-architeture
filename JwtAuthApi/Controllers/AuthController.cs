@@ -32,8 +32,6 @@ namespace JwtAuthApi.Controllers
             {
                 return BadRequest("Username is already taken.");
             }
-
-            // Set default role if not provided
             if (string.IsNullOrEmpty(user.Role))
             {
                 user.Role = "user";
@@ -68,11 +66,6 @@ namespace JwtAuthApi.Controllers
 
             return Ok(new { token = tokenString });
         }
-
-
-
-
-
         [HttpGet("GetUserById/{id}")]
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> GetUserById(int id)
