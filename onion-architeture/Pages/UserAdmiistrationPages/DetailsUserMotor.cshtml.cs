@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -12,16 +10,15 @@ namespace onion_architeture.Pages.UserAdmiistrationPages
 {
     public class DetailsUserMotorModel : PageModel
     {
-        private readonly onion_architeture.Infrastructure.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public DetailsUserMotorModel(onion_architeture.Infrastructure.Data.ApplicationDbContext context)
+        public DetailsUserMotorModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        public ClientAndMotorcycle ClientAndMotorcycle { get; set; } = default!;
-
-        public IList<Motorcycle> Motorcycle { get; set; } = default!;
+        public Client Client { get; set; } = default!;
+        public List<Motorcycle> Motorcycles { get; set; } = new List<Motorcycle>();
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,15 +27,21 @@ namespace onion_architeture.Pages.UserAdmiistrationPages
                 return RedirectToPage("./Userlist");
             }
 
-            var clientandmotorcycle = await _context.ClientMotorcycles.FirstOrDefaultAsync(m => m.ClientId == id);
-            if (clientandmotorcycle == null)
+            Client = await _context.Clients
+                .Include(c => c.ClientAndMotorcycles)
+                .ThenInclude(cm => cm.Motorcycle)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (Client == null)
             {
                 return RedirectToPage("./Userlist");
             }
-            else
+
+            foreach (var cm in Client.ClientAndMotorcycles)
             {
-                ClientAndMotorcycle = clientandmotorcycle;
+                Motorcycles.Add(cm.Motorcycle);
             }
+
             return Page();
         }
     }
