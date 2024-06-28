@@ -1,43 +1,109 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        /* General Form Styling */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-@{
-    ViewData["Title"] = "Register";
-}
+        /* Form Group Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-<h2>@ViewData["Title"]</h2>
+        /* Label Styling */
+        .control-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
-<form asp-action="Register" method="post">
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Surname" class="control-label"></label>
-        <input asp-for="Surname" class="form-control" />
-        <span asp-validation-for="Surname" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Age" class="control-label"></label>
-        <input asp-for="Age" class="form-control" />
-        <span asp-validation-for="Age" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="DrivingLicence" class="control-label"></label>
-        <input asp-for="DrivingLicence" class="form-control" />
-        <span asp-validation-for="DrivingLicence" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Register</button>
-    </div>
-</form>
+        /* Input Styling */
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        /* Validation Error Styling */
+        .text-danger {
+            color: #e74c3c;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        /* Form Heading Styling */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    @{
+        ViewData["Title"] = "Register";
+    }
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Surname" class="control-label"></label>
+            <input asp-for="Surname" class="form-control" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Age" class="control-label"></label>
+            <input asp-for="Age" class="form-control" />
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DrivingLicence" class="control-label"></label>
+            <input asp-for="DrivingLicence" class="form-control" />
+            <span asp-validation-for="DrivingLicence" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="control-label"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</body>
+</html>
