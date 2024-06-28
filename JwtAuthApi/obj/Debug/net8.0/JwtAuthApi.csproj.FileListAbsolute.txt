@@ -64,3 +64,4 @@ C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\refint\JwtAuthApi.dll
 C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.pdb
 C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.genruntimeconfig.cache
 C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\ref\JwtAuthApi.dll
+C:\Users\izkas\source\repos\JwtAuthApi\obj\Debug\net8.0\JwtAuthApi.sourcelink.json
